@@ -169,7 +169,7 @@ class StrucMapCalculatorInterface {
   }
 
   ///\brief Sets point_group and internal_translations by breaking factor group
-  ///into pure translations and rotations/rotoreflections
+  /// into pure translations and rotations/rotoreflections
   /// _factor_group should be sorted in order of decreasing character
   void _set_sym_info(SymOpVector const &_factor_group) {
     m_point_group.clear();

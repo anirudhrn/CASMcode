@@ -35,11 +35,11 @@ class StrainCostCalculator {
   }
 
   //\brief Anisotropic strain cost; utilizes stored gram matrix to compute
-  //strain cost
+  // strain cost
   double strain_cost(Eigen::Matrix3d const &_deformation_gradient) const;
 
   //\brief Anisotropic strain cost; utilizes stored gram matrix to compute
-  //strain cost
+  // strain cost
   double strain_cost(Eigen::Matrix3d const &_deformation_gradient,
                      double _vol_factor) const;
 
@@ -138,7 +138,7 @@ class LatticeMap {
   mutable IMatType m_icache;
 
   ///\brief Returns the inverse of the current transformation matrix under
-  ///consideration
+  /// consideration
   // We treat the unimodular matrices as the inverse of the transformation
   // matrices that we are actively considering, allowing fewer matrix inversions
   Eigen::Matrix3i const &inv_mat() const { return (*m_mvec_ptr)[m_currmat]; }
